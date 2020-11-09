@@ -1,0 +1,95 @@
+:root {
+    --width-playing-field: 550px;
+}
+
+/*** БАЗОВЫЕ ЭЛЕМЕНТЫ ***/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    z-index: 1;
+    background-color: #FFE5D4;
+}
+
+header {
+    background-color: #EFC7C2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.page-content {
+    text-align: center;
+    margin: auto 0;
+}
+
+.playing-field {
+    margin: 0 auto;
+    padding: 2px 0 0 2px;
+    height: var(--width-playing-field);
+    width: var(--width-playing-field);
+    display: flex;
+    justify-content: stretch;
+    flex-grow: 3;
+    align-items: stretch;
+}
+
+.square-list {
+    height: 100%;
+    padding: 3px 0 5px 5px;
+    border-radius: 5px;
+    height: calc(var(--width-playing-field) - 10px);
+    width: calc(var(--width-playing-field) - 10px);
+    display: flex;
+    text-align: center;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-grow: 2;
+}
+
+.level {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.game-header {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timer {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+header, .timer, .level{
+    color : black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
